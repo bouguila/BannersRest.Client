@@ -1,6 +1,9 @@
 # BannerRestClient
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+Webapp built on AngularJs 6 to communicate with [BannersRest.API](https://github.com/bouguila/BannersRest.API)
+
+- the app allows to manage Banners (create,Read, update and delete) by consuming/calling the REST API. 
+
 
 ## to run the app
 - Clone the repo
@@ -9,14 +12,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Run `ng serve` for a dev server. 
 - Navigate to `http://localhost:4200/banners`. 
     > First you have Make sure the [REST API Server](https://github.com/bouguila/BannersRest.API) is running.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 
