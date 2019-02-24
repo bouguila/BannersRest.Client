@@ -2,9 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## to run the app
+- Clone the repo
+- Make sure [nodejs](https://nodejs.org/en/download/) is installed
+- Go to solution folder 
+- Run `ng serve` for a dev server. 
+- Navigate to `http://localhost:4200/banners`. 
+    > First you have Make sure the [REST API Server](https://github.com/bouguila/BannersRest.API) is running.
 
 ## Code scaffolding
 
