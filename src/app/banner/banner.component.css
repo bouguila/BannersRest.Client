@@ -1,0 +1,39 @@
+/* Products Component's private CSS styles */
+.banners {
+  border-collapse:collapse;  /* <--- add this so all the internal <td>s share adjacent borders  */
+  border:1px solid black;
+  width:80%;
+  }
+  .banners tr,
+  .banners td,
+  .banners th
+   {
+    border:1px solid black;
+  }
+  
+  .banners tr:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+    cursor: pointer;
+  }
+  
+  
+  button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+  }
+  
+  button:hover {
+    background-color: #cfd8dc;
+  }
+  
+  button.delete {
+    background-color: gray !important;
+    color: white;
+  }

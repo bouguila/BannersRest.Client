@@ -1,0 +1,29 @@
+<div>
+  <button routerLink="/banners">Back</button>
+  <h2>Banner Add</h2>
+  <div>
+    <table>
+      <tr>
+        <td>Id</td>
+        <td>
+          <input [(ngModel)]="banner.id" placeholder="Id"/>
+        </td>
+        <td>
+          <span *ngIf="error" class="error">{{error['id']}}</span>
+        </td>
+      </tr>
+      <tr>
+        <td>Html</td>
+        <td>
+          <textarea [(ngModel)]="banner.html" placeholder="Html">
+          </textarea>
+        </td>
+        <td>
+            <span *ngIf="error" class="error">{{error['Html']}}</span>
+        </td>
+      </tr>
+    </table>
+   <br>
+  </div>
+  <button (click)="addBanner()">Save</button>
+</div>

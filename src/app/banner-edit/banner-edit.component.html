@@ -1,0 +1,22 @@
+<div>
+  <button routerLink="/banners">Back</button>
+  <h2>Banner Edit</h2>
+  <div>
+    <label>Id:
+      <input [(ngModel)]="banner.id" placeholder="Banner Id"/>
+      <span *ngIf="error" class="error">{{error['id']}}</span>
+    </label><br>
+    <label>Html:
+      <input [(ngModel)]="banner.html" placeholder="Banner Html"/>
+        <span *ngIf="error" class="error">{{error['Html']}}</span>
+    </label><br>
+    <label>Created on:
+      <input [(ngModel)]="banner.created" placeholder="Banner Created" disabled/>
+    </label><br>
+    <label>Last Modified:
+      <span *ngIf="banner.modified"> {{banner.modified}}</span>
+      <span *ngIf="!banner.modified"> never</span><br>
+    </label>
+  </div>
+  <button (click)="updateBanner()">Update</button>
+</div>

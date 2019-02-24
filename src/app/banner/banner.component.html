@@ -1,0 +1,32 @@
+<h2>Banner List</h2>
+
+<div>
+  <button (click)="add()">
+    Add
+  </button>
+</div>
+<br/>
+<table class=banners>
+  <tr>
+    <th>#</th>
+    <th>Id</th>
+    <th>Html</th>
+    <th>Created</th>
+    <th>Modified</th>
+    <th></th>
+  </tr>
+  <tr *ngFor="let p of banners; let i=index;" routerLink="/banner-edit/{{p.id}}">
+    <td>{{i+1}}</td>
+    <td>{{p.id}}</td>
+    <td>{{p.html}}</td>
+    <td>{{p.created}}</td>
+    <td >
+        <div *ngIf="p.modified"> {{p.modified}}</div>
+        <div *ngIf="!p.modified"> never</div>
+      </td>
+    <td>
+        <button class="delete" title="delete banner"
+        (click)="deleteClicked($event, p)">Delete</button>
+    </td>
+  </tr>
+</table>
